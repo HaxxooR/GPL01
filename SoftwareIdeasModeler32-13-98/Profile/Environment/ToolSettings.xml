@@ -1,0 +1,38 @@
+﻿<tool-settings>
+  <tool name="Selection">
+    <selection-tool-settings selection-type="Intersection" ignore-labels="false" select-fields="smart" />
+  </tool>
+  <tool name="Uml.State">
+    <shape-tool-settings size-type="Predefined" default-size="0,0" />
+  </tool>
+  <tool name="Uml.InterfaceClass">
+    <shape-tool-settings size-type="Predefined" default-size="0,0" />
+  </tool>
+  <tool name="Uml.Class">
+    <shape-tool-settings size-type="Predefined" default-size="0,0" />
+  </tool>
+  <tool name="Uml.Usage">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.Realization">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.Aggregation">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.Composition">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.Generalization">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.OneDirectionalAssociation">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.ConstraintConnector">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+  <tool name="Uml.Containment">
+    <path-tool-settings direction="DefaultDirection" />
+  </tool>
+</tool-settings>

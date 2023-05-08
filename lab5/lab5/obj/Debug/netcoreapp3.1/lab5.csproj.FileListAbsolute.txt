@@ -1,0 +1,14 @@
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.exe
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.deps.json
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.runtimeconfig.json
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.runtimeconfig.dev.json
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.dll
+F:\6IID\inzynieria oprogramowania\lab5\lab5\bin\Debug\netcoreapp3.1\lab5.pdb
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.csproj.AssemblyReference.cache
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.GeneratedMSBuildEditorConfig.editorconfig
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.AssemblyInfoInputs.cache
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.AssemblyInfo.cs
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.csproj.CoreCompileInputs.cache
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.dll
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.pdb
+F:\6IID\inzynieria oprogramowania\lab5\lab5\obj\Debug\netcoreapp3.1\lab5.genruntimeconfig.cache

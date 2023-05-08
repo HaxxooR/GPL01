@@ -1,0 +1,5 @@
+﻿<dialog-sizes>
+  <dialog name="UseConfirmationForm" size="483,302" />
+  <dialog name="ItemPropertiesForm" size="528,524" />
+  <dialog name="NewConstructorForm" size="431,410" />
+</dialog-sizes>

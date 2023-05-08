@@ -1,0 +1,48 @@
+<%==SIM:ExplicitWhitespacesOn==%>
+<%==SIM:AutoIndentOn==%>
+
+<%==SIM:UserInput:IndentationSize=Number("Indentation size",4)==%>
+<%==SIM:UserInput:IndentationChar=Choice("Indentation char",Space,Tab)==%>
+<%==SIM:If:Eq(IndentationChar,"Tab")==%><%==SIM:SetTabIndent==%><%==SIM:Else==%><%==SIM:SetSpaceIndent==%><%==SIM:EndIf==%><%==SIM:IndentSize(IndentationSize)==%>
+
+<%==SIM:IfNot:Element.IsContained==%>
+<%==SIM:Set:private===%>
+<%==SIM:Set:protected===%>
+<%==SIM:Set:package===%>
+<%==SIM:Set:public===%>
+
+<%==SIM:ForEach:Imports==%>
+    import "<%==SIM:Import.Name==%>";
+    <%==SIM:Line==%>
+<%==SIM:EndFor==%>
+<%==SIM:Line==%>
+
+
+<%==SIM:If:Element.HasDocumentation==%>
+/*<%==SIM:ForEach:Element.DocumentationLines==%>
+ * <%==SIM:DocumentationLine==%><%==SIM:Line==%>
+<%==SIM:EndFor==%> */<%==SIM:Line==%>
+<%==SIM:EndIf==%>
+
+<%==SIM:IfNot:IsEmpty(Element.Namespace)==%>
+package <%==SIM:Element.Namespace==%>;<%==SIM:Line==%>
+<%==SIM:EndIf==%>
+
+enum <%==SIM:Element.Name==%><%==SIM:Line==%>
+{<%==SIM:StartBlock==%><%==SIM:Line==%>
+
+    <%==SIM:ForEach:Element.Attributes(EnumAtt)==%>
+        <%==SIM:ForEach:EnumAtt.DocumentationLines==%>
+            //<%==SIM:DocumentationLine==%>
+            <%==SIM:Line==%>
+        <%==SIM:EndFor==%>
+    
+        <%==SIM:EnumAtt.Name==%> = <%==SIM:Coalesce(EnumAtt.DefaultValue, EnumAtt.GetTaggedValue("FieldNumber"),GetNextFreeNumber(Enum.Uid))==%>
+        ;<%==SIM:Line==%>
+    <%==SIM:EndFor==%>
+
+<%==SIM:EndBlock==%><%==SIM:Line==%>
+}<%==SIM:Line==%>
+
+
+<%==SIM:EndIf==%>

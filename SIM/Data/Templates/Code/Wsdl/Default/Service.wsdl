@@ -1,0 +1,84 @@
+﻿<%==SIM:ExplicitWhitespacesOn==%>
+<%==SIM:AutoIndentOn==%>
+<%==SIM:UserInput:IndentationSize=Number("Indentation size",4)==%>
+<%==SIM:UserInput:IndentationChar=Choice("Indentation char",Space,Tab)==%>
+<%==SIM:If:Eq(IndentationChar,"Tab")==%><%==SIM:SetTabIndent==%><%==SIM:Else==%><%==SIM:SetSpaceIndent==%><%==SIM:EndIf==%><%==SIM:IndentSize(IndentationSize)==%>
+
+
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" <%==SIM:Line==%>
+                  xmlns:tns="<%==SIM:Diagram.Namespace==%>" <%==SIM:Line==%>
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" <%==SIM:Line==%>
+                  xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" <%==SIM:Line==%>
+                  xmlns="http://schemas.xmlsoap.org/wsdl/" <%==SIM:Line==%>
+                  name="<%==SIM:Diagram.Name==%>" <%==SIM:Line==%>
+                  targetNamespace="<%==SIM:Diagram.Namespace==%>" <%==SIM:Line==%>
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"><%==SIM:StartBlock==%><%==SIM:Line==%>
+	<wsdl:types><%==SIM:StartBlock==%><%==SIM:Line==%>
+	<%==SIM:Include(Schema.xsd,Diagram,True)==%>
+	<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:types><%==SIM:Line==%>
+  
+	
+	<%==SIM:ForEach:Diagram.Elements.FilterByStereotype("message")==%>
+	<wsdl:message name="<%==SIM:Element.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+	<%==SIM:ForEach:Element.AllAttributes==%>
+		
+	<wsdl:part name="<%==SIM:Attribute.Name==%>" type="<%==SIM:If:Attribute.Type.HasClassifier==%>tns:<%==SIM:Else==%>xsd:<%==SIM:EndIf==%><%==SIM:Attribute.Type==%>" /><%==SIM:Line==%>
+  
+	<%==SIM:EndFor==%>
+	<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:message><%==SIM:Line==%>
+	<%==SIM:EndFor==%>
+	<%==SIM:Line==%>
+	
+	
+	
+	<%==SIM:ForEach:Diagram.Elements.FilterByStereotype("portType")==%>
+	<wsdl:portType name="<%==SIM:Element.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+	<%==SIM:ForEach:Element.Operations==%>
+		
+	<wsdl:operation name="<%==SIM:Operation.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+		<wsdl:input message="tns:<%==SIM:Operation.Parameters.First.Type==%>" /><%==SIM:Line==%>
+		<wsdl:output message="tns:<%==SIM:Operation.ReturnType==%>" /><%==SIM:Line==%>
+    <%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:operation><%==SIM:Line==%>
+		
+	<%==SIM:EndFor==%>
+	<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:portType>
+	<%==SIM:EndFor==%>
+	<%==SIM:Line==%>
+	
+	
+	
+	<%==SIM:ForEach:Diagram.Elements.FilterByStereotype("portType")==%>
+	<wsdl:binding name="<%==SIM:Element.Name==%>Binding" type="tns:<%==SIM:Element.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" /><%==SIM:Line==%>
+		
+	<%==SIM:ForEach:Element.Operations==%>
+		
+	<wsdl:operation name="<%==SIM:Operation.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+		<soap:operation soapAction="https://www.pilulka24.sk/buxus/project_includes/WS_Buxus.php#setOrderState" /><%==SIM:Line==%>
+		
+		<wsdl:input><%==SIM:StartBlock==%><%==SIM:Line==%>
+			<soap:body use="encoded" namespace="<%==SIM:Diagram.Namespace==%>" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" /><%==SIM:Line==%>
+		<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:input><%==SIM:Line==%>
+		<wsdl:output><%==SIM:StartBlock==%><%==SIM:Line==%>
+			<soap:body use="encoded" namespace="<%==SIM:Diagram.Namespace==%>" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" /><%==SIM:Line==%>
+		<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:output><%==SIM:Line==%>
+  
+    <%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:operation><%==SIM:Line==%>
+		
+	<%==SIM:EndFor==%>
+	<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:binding><%==SIM:Line==%>
+	<%==SIM:EndFor==%>
+	<%==SIM:Line==%>
+	
+	
+  
+	<wsdl:service name="<%==SIM:Diagram.Name==%>"><%==SIM:StartBlock==%><%==SIM:Line==%>
+		<%==SIM:ForEach:Diagram.Elements.FilterByStereotype("portType")==%>
+		<wsdl:port name="<%==SIM:Element.Name==%>" binding="tns:<%==SIM:Element.Name==%>Binding"><%==SIM:StartBlock==%><%==SIM:Line==%>
+			<soap:address location="<%==SIM:Element.Url==%>" />
+		<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:port>
+		<%==SIM:EndFor==%>
+	<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:service><%==SIM:Line==%>	
+	
+	
+<%==SIM:EndBlock==%><%==SIM:Line==%></wsdl:definitions><%==SIM:Line==%>

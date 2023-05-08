@@ -1,0 +1,7 @@
+﻿<toolbox>
+  <group-setting name="Custom" style="Icons" expanded="true" show-name="false" icon-size="20" />
+  <group-setting name="UmlCommon" style="Icons" expanded="true" show-name="false" icon-size="20" />
+  <group-setting name="StateMachineDiagram" style="IconsWithLabel" expanded="true" show-name="true" icon-size="20" />
+  <group-setting name="Drawing" style="Icons" expanded="true" show-name="false" icon-size="20" />
+  <group-setting name="ClassDiagram" style="IconsWithLabel" expanded="true" show-name="true" icon-size="20" />
+</toolbox>

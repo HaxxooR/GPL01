@@ -1,0 +1,84 @@
+<%==SIM:ExplicitWhitespacesOn==%>
+<%==SIM:AutoIndentOn==%>
+
+<%==SIM:UserInput:IndentationSize=Number("Indentation size",4)==%>
+<%==SIM:UserInput:IndentationChar=Choice("Indentation char",Space,Tab)==%>
+<%==SIM:If:Eq(IndentationChar,"Tab")==%><%==SIM:SetTabIndent==%><%==SIM:Else==%><%==SIM:SetSpaceIndent==%><%==SIM:EndIf==%><%==SIM:IndentSize(IndentationSize)==%>
+
+<%==SIM:IfNot:Element.IsContained==%>
+<%==SIM:Set:private===%><%==SIM:Set:protected===%><%==SIM:Set:package===%><%==SIM:Set:public===%>
+
+<%==SIM:ForEach:Imports==%>
+    import "<%==SIM:Import.Name==%>";
+    <%==SIM:Line==%>
+<%==SIM:EndFor==%>
+<%==SIM:Line==%>
+
+
+<%==SIM:If:Element.HasDocumentation==%>
+/*<%==SIM:ForEach:Element.DocumentationLines==%>
+ * <%==SIM:DocumentationLine==%><%==SIM:Line==%>
+<%==SIM:EndFor==%> */<%==SIM:Line==%>
+<%==SIM:EndIf==%>
+
+<%==SIM:IfNot:IsEmpty(Element.Namespace)==%>
+package <%==SIM:Element.Namespace==%>;<%==SIM:Line==%>
+<%==SIM:EndIf==%>
+
+
+<%==SIM:ForEach:Element.Operations==%>
+message <%==SIM:Operation.Name==%>Request
+<%==SIM:Line==%>
+{<%==SIM:StartBlock==%><%==SIM:Line==%>
+
+    <%==SIM:ForEach:Operation.Parameters==%>
+        <%==SIM:ForEach:Parameter.DocumentationLines==%>
+            //<%==SIM:DocumentationLine==%>
+            <%==SIM:Line==%>
+        <%==SIM:EndFor==%>
+
+        <%==SIM:If:Parameter.HasStereotype("optional")==%>optional <%==SIM:EndIf==%>
+        <%==SIM:If:Parameter.HasStereotype("required")==%>required <%==SIM:EndIf==%>
+        <%==SIM:If:Parameter.IsArray==%>repeated <%==SIM:EndIf==%>
+        <%==SIM:If:IsEmpty(Parameter.OriginalType)==%>google.protobuf.Any<%==SIM:Else==%><%==SIM:Parameter.Type==%><%==SIM:EndIf==%><%==SIM:Space==%>
+        <%==SIM:Parameter.Name==%> = <%==SIM:Coalesce(Parameter.GetTaggedValue("FieldNumber"),GetNextFreeNumber(Operation.Uid))==%>;
+        <%==SIM:Line==%>
+    <%==SIM:EndFor==%>
+<%==SIM:EndBlock==%><%==SIM:Line==%>
+}<%==SIM:Line(2)==%>
+
+message <%==SIM:Operation.Name==%>Response
+<%==SIM:Line==%>
+{<%==SIM:StartBlock==%><%==SIM:Line==%>
+    <%==SIM:If:Operation.HasReturnType==%>
+    <%==SIM:If:Operation.ReturnIsArray==%>repeated <%==SIM:EndIf==%>
+    <%==SIM:If:IsEmpty(Operation.OriginalReturnType)==%>google.protobuf.Any<%==SIM:Else==%><%==SIM:Operation.Type==%><%==SIM:EndIf==%><%==SIM:Space==%>
+    responseData <%==SIM:EndIf==%> = <%==SIM:Coalesce(Operation.GetTaggedValue("FieldNumber"),GetNextFreeNumber(Concat(Operation.Uid,"_ret")))==%>;
+    <%==SIM:Line==%>
+    <%==SIM:EndIf==%>
+<%==SIM:EndBlock==%><%==SIM:Line==%>
+}<%==SIM:Line(2)==%>
+<%==SIM:EndFor==%>
+
+<%==SIM:EndIf==%>
+
+service <%==SIM:Element.Name==%>
+    <%==SIM:Line==%>
+    {<%==SIM:StartBlock==%><%==SIM:Line==%>
+
+
+        <%==SIM:ForEach:Element.Operations==%>            
+            <%==SIM:ForEach:Operation.DocumentationLines==%>
+                //<%==SIM:DocumentationLine==%>
+                <%==SIM:Line==%>
+            <%==SIM:EndFor==%>
+
+            rpc <%==SIM:Space==%><%==SIM:Operation.Name==%> (<%==SIM:Operation.Name==%>Request) returns <%==SIM:Space==%>(<%==SIM:Operation.Name==%>Response);
+            <%==SIM:IfNot:IsLastItem==%><%==SIM:Line==%><%==SIM:EndIf==%>
+
+        <%==SIM:EndFor==%>
+
+    <%==SIM:EndBlock==%><%==SIM:Line==%>
+    }<%==SIM:Line==%>
+
+<%==SIM:EndIf==%>

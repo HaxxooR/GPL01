@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<typeset name="Object Pascal" description="" version="2.0" prefix="ObjectPascal" language="ObjectPascal">  
+  <types>
+    <type name="ShortInt" description="" tid="s-integer8">
+    </type>
+    <type name="Byte" description="" tid="u-integer8">      
+    </type>
+    <type name="Char" description="" tid="char">
+    </type>
+    <type name="WideChar" description="" tid="u-integer16">
+    </type>
+    <type name="SmallInt" description="" tid="s-integer16">
+    </type>
+    <type name="Word" description="" tid="u-integer16">
+    </type>
+    <type name="LongInt" description="" tid="s-integer32">      
+    </type>
+    <type name="Integer" description="" tid="s-integer32">      
+    </type>    
+    <type name="Int64" description="" tid="s-integer64">      
+    </type>        
+    <type name="Cardinal" description="" tid="u-integer32">
+    </type>
+    <type name="Single" description="" tid="s-real32">
+    </type>
+    <type name="Double" description="" tid="s-real64">
+    </type>
+    <type name="Real" description="" tid="s-real64">
+    </type>
+    <type name="Extended" description="" tid="s-real80">
+    </type>
+    <type name="Comp" description="" tid="s-real64">
+    </type>
+    <type name="Currency" description="" tid="s-real64">
+    </type>
+    <type name="Boolean" description="" tid="boolean">
+    </type>
+    <type name="Variant" description="" tid="object">
+    </type>
+    <type name="String" description="" tid="string">
+    </type>
+    <type name="TDateTime" description="" tid="datetime">      
+    </type>	
+  </types>
+</typeset>

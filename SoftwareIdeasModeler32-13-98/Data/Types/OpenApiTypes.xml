@@ -1,0 +1,23 @@
+﻿<types name="OpenApi" description="Open API types" prefix="OpenApi" version="1.0"  language="OpenApi">
+  <type tid="object" name="object" description="" />  
+  <type tid="boolean" name="boolean" description="" />
+  <type tid="number" name="number" description="" />
+  <type tid="float" name="float" description="" />
+  <type tid="double" name="double" description="" />
+  <type tid="integer" name="integer" description="" />
+  <type tid="u-integer32" name="int32" description="" />
+  <type tid="u-integer64" name="int64" description="" />
+  <type tid="array" name="array" description="" />
+  <type tid="string" name="string" description="" />
+  <type tid="date" name="date" description="" />
+  <type tid="datetime" name="date-time" description="" />
+  <type tid="string" name="password" description="" />
+  <type tid="string" name="byte" description="" />
+  <type tid="binary" name="binary" description="" />
+  <type tid="string" name="email" description="" />
+  <type tid="string" name="uuid" description="" />
+  <type tid="string" name="uri" description="" />
+  <type tid="string" name="hostname" description="" />
+  <type tid="string" name="ipv4" description="" />
+  <type tid="string" name="ipv6" description="" />
+</types>
