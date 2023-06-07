@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.96" multi-file="no" uid="simp58fffdd3574b4ded9a4174707214c437">
+  <meta>
+    <name>Strategia</name>
+    <authors>Kamila Tałaj</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type stereotype="interface" type-id="uml-interface-classifier" type="Interface" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="frame" type="Frame" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-interface-classifier" type="Interface" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>8</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>24</value>
+      </counter>
+      <counter>
+        <item-type type-id="abstraction" type="Abstraction" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="usage" type="Usage" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="realization" type="Realization" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="frame" type="Frame" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="diagram-description" type="Diagram Description" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="constraint-connector" type="Constraint Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="containment" type="Containment" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlStateMachineDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>18</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-f670094e63224b358c2b23b283b92661" name="" task-id-sequence="0">
+    <working-schedule uid="ws-c4befae3810e4950882f59a2ca7f98df" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>Kamila</first-name>
+        <last-name>Tałaj</last-name>
+        <role />
+        <e-mail>w64227@student.wsiz.edu.pl</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-ec241f30f8314dcfaa33c418cebf9fc3" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Kamila</first-name>
+        <last-name>Tałaj</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-a7963436940b4dc3b557c80d7776efb2" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Class:f584ae81c2854cd6b656f8906a89fcb4" name="paymentProcessor" class-ref="f584ae81c2854cd6b656f8906a89fcb4" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pa7350c6c431949339a255a8b99baa007_117672501" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Kamila Tałaj</author>
+        </authors>
+        <description />
+        <creation-date>04/24/2023 13:08:51</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-statechart" id="peaf0fe6d7a08422695f8b90451355d08_270736316" name="StateMachineDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Kamila Tałaj</author>
+          </authors>
+          <description />
+          <creation-date>04/24/2023 13:08:51</creation-date>
+          <change-date>04/24/2023 13:15:29</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="a8b866f564734180a6472f7fd25994f2" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+      <diagram type="uml-class" id="pf31d10acbf5549f88911733117ad9c83_757899860" name="ClassDiagram1" order-index="2" overview-order-index="0" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-226,-198" zoom="0.8">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Kamila Tałaj</author>
+          </authors>
+          <description />
+          <creation-date>04/24/2023 13:15:38</creation-date>
+          <change-date>04/24/2023 14:07:40</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="ac5c14071c524e53a16436fa1e7f3a93" cid="GNR002" type="generalization" creator="" creation-date="04/24/2023 14:07:21" from="75c3c0f195dd4b91b8252d54568f57c3" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="f584ae81c2854cd6b656f8906a89fcb4" cid="C001" type="class" name="paymentProcessor" creator="" creation-date="04/24/2023 13:16:14" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a5ced23664dae43cfbb097470e4d448cd492" cid="PROP001" name="Paymentstrategy" creation-date="04/24/2023 13:16:54" property-ref="3c0169d078bf43a8bf41751f9f0149c9" />
+            </attributes>
+            <operations>
+              <operation id="o2ae8ae58d6964f0da3e0c0b56b5a04c4478" cid="OP005" name="SetStrategy" creation-date="04/24/2023 13:36:16" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe12477f89f2743d994460b267986b267" name="PaymentStrategy" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="ocf4296ed9d4d4228aad4702ae97fd1a6170" cid="OP010" name="setName" creation-date="04/24/2023 13:45:40" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pfa5ca9aa34de4e74ab1fdb13ba1c35e0" name="paymentPlatform" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o4a860a1c86ad4f70bb5f0c0b7da9670754" cid="OP012" name="setAvailableCountries" creation-date="04/24/2023 13:48:20" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pfc3b03c7f2684b3384de40f1d2fb8301" name="availableCountry" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di017b4eb29adc42c6ac72e83453b851c16656" cid="C005" type="class" name="ConcreteStrategyC" creator="" creation-date="04/24/2023 13:40:02" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a2247c36286be49cb932f90afd974f04a163" cid="PROP020" name="" creation-date="04/24/2023 13:59:07" property-ref="b9189a65418447e094d03bf1034a72dd" />
+            </attributes>
+            <operations>
+              <operation id="o148ed5916d6346eeba4d531bfbdf9c3c903" cid="OP016" name="setName" creation-date="04/24/2023 13:59:15" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p19c9dfaf97b046aaa402dea2b5be88ad" name="Cash" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o88f89380cf2741b59b42b952e5f66158198" cid="OP017" name="setAvailableCountries" creation-date="04/24/2023 14:00:48" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p73615fad9ee748a3a083ebe12c347487" name="Poland" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o6296b7de924d4c7a84284f9d29391810273" cid="OP011" name="setPaymentPricing" creation-date="04/24/2023 13:46:43" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe10842e6377843e1b10a6889fed4093a" name="0zł" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="ob0f6c6f6e4af490a8e16cacd61ec7f57762" cid="OP008" name="doPayment" creation-date="04/24/2023 13:40:46" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pc7b48542ac914258b916ad740d687e7f" name="manualTransaction" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="8c1a6829e9044697982ea7c60b2efe24" cid="GNR006" type="generalization" creator="" creation-date="04/24/2023 14:07:40" from="di4f19c075f89144fd9db8a8a11a735d678968" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="9b261b3a660243fca5b6fa1747c9e95b" cid="GNR005" type="generalization" creator="" creation-date="04/24/2023 14:07:37" from="di8def80ab06124d91b66c9fc5ca3d18318880" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="82284ce43cc84a719f5dd3be64759550" cid="PROP022" type="property" owner="di8def80ab06124d91b66c9fc5ca3d18318880" creator="" creation-date="04/24/2023 13:59:07" visibility="undefined" />
+          <item id="7972409d0203472c9ebd4083a399fd5c" cid="PROP023" type="property" name="doPayment (clientaccount, sellecaccount)" owner="di8def80ab06124d91b66c9fc5ca3d18318880" creator="" creation-date="04/24/2023 14:05:07" visibility="public" />
+          <item id="ce44475a841546d1bcd062a1356a519d" cid="GNR003" type="generalization" creator="" creation-date="04/24/2023 14:07:26" from="dia9a477789ec34ced80aadd5de28e3be57044" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="ac0298cd83b148a3b62504792f09de08" cid="GNR001" type="generalization" creator="" creation-date="04/24/2023 13:28:20" from="f584ae81c2854cd6b656f8906a89fcb4" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="1931bed04f3940de8d58511f509abba3" cid="PROP021" type="property" owner="di4f19c075f89144fd9db8a8a11a735d678968" creator="" creation-date="04/24/2023 13:59:07" visibility="undefined" />
+          <item id="b9189a65418447e094d03bf1034a72dd" cid="PROP020" type="property" owner="di017b4eb29adc42c6ac72e83453b851c16656" creator="" creation-date="04/24/2023 13:59:07" visibility="undefined" />
+          <item id="2f569ab0246b46b098e2186ecfc715eb" cid="GNR004" type="generalization" creator="" creation-date="04/24/2023 14:07:32" from="di017b4eb29adc42c6ac72e83453b851c16656" to="0b50ff9837524b10a008cff8814825cd" visibility="package" />
+          <item id="di4f19c075f89144fd9db8a8a11a735d678968" cid="C006" type="class" name="ConcreteStrategyE" creator="" creation-date="04/24/2023 13:40:02" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a2247c36286be49cb932f90afd974f04a163" cid="PROP021" name="" creation-date="04/24/2023 13:59:07" property-ref="1931bed04f3940de8d58511f509abba3" />
+            </attributes>
+            <operations>
+              <operation id="ob0f6c6f6e4af490a8e16cacd61ec7f57762" cid="OP008" name="doPayment" creation-date="04/24/2023 13:40:46" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p33eafe0c619f4ac188fe350f4ceb143b" name="clientaccount" type="" type-id="" />
+                  <parameter id="p40e6a2068d454185881e66d5c4cd3586" name="sellecaccount" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o148ed5916d6346eeba4d531bfbdf9c3c903" cid="OP016" name="setName" creation-date="04/24/2023 13:59:15" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p19c9dfaf97b046aaa402dea2b5be88ad" name="PayPo" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o88f89380cf2741b59b42b952e5f66158198" cid="OP017" name="setAvailableCountries" creation-date="04/24/2023 14:00:48" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p5f147c8cd38b42198d7fddcf8361b1e2" name="Poland" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o6296b7de924d4c7a84284f9d29391810273" cid="OP011" name="setPaymentPricing" creation-date="04/24/2023 13:46:43" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe10842e6377843e1b10a6889fed4093a" name="3zł" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="3c0169d078bf43a8bf41751f9f0149c9" cid="PROP001" type="property" name="Paymentstrategy" owner="f584ae81c2854cd6b656f8906a89fcb4" creator="" creation-date="04/24/2023 13:16:54" visibility="private" />
+          <item id="75c3c0f195dd4b91b8252d54568f57c3" cid="C002" type="class" name="ConcreteStrategyA" creator="" creation-date="04/24/2023 13:40:02" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a2247c36286be49cb932f90afd974f04a163" cid="PROP018" name="" creation-date="04/24/2023 13:59:07" property-ref="c3053059870e42e78608f748c4a51df5" />
+            </attributes>
+            <operations>
+              <operation id="ob0f6c6f6e4af490a8e16cacd61ec7f57762" cid="OP008" name="doPayment" creation-date="04/24/2023 13:40:46" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p2bdaab298afd44fa89772100eff59851" name="clientaccount" type="" type-id="" />
+                  <parameter id="p0ab779041fff40e7b37a697b95684b3a" name="sellecaccount" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o148ed5916d6346eeba4d531bfbdf9c3c903" cid="OP016" name="setName" creation-date="04/24/2023 13:59:15" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p19c9dfaf97b046aaa402dea2b5be88ad" name="Mbank" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o88f89380cf2741b59b42b952e5f66158198" cid="OP017" name="setAvailableCountries" creation-date="04/24/2023 14:00:48" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p5f147c8cd38b42198d7fddcf8361b1e2" name="Poland" type="" type-id="" />
+                  <parameter id="p8e1ff9cb9bba4d40b3a601b635e6fd6f" name="Germany" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o6296b7de924d4c7a84284f9d29391810273" cid="OP011" name="setPaymentPricing" creation-date="04/24/2023 13:46:43" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe10842e6377843e1b10a6889fed4093a" name="5zł" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="c3053059870e42e78608f748c4a51df5" cid="PROP018" type="property" owner="75c3c0f195dd4b91b8252d54568f57c3" creator="" creation-date="04/24/2023 13:59:07" visibility="undefined" />
+          <item id="0b50ff9837524b10a008cff8814825cd" cid="I001" type="uml-interface-classifier" name="PaymentStrategy" creator="" creation-date="04/24/2023 13:15:54" visibility="undefined">
+            <stereotypes>
+              <stereotype name="interface" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="0b50ff9837524b10a008cff8814825cd_interface_c" type="interface" ref="" />
+            </stereotype-instances>
+            <owned-items />
+            <attributes>
+              <attribute id="a75edcd18be0241ae861cd1d6eb20fe37714" cid="PROP003" name="doPayment (kontoklienta,kontosprzedawcy)" creation-date="04/24/2023 13:26:19" property-ref="ba7b783035544d2c93f0556afb772c83" />
+            </attributes>
+          </item>
+          <item id="ba7b783035544d2c93f0556afb772c83" cid="PROP003" type="property" name="doPayment (kontoklienta,kontosprzedawcy)" owner="0b50ff9837524b10a008cff8814825cd" creator="" creation-date="04/24/2023 13:26:19" visibility="public" />
+          <item id="33d56106d169447f82b1d1b554764495" cid="ELEM002" type="constraint-connector" creator="" creation-date="04/24/2023 13:29:31" from="fc7f72e0c74a49f7a46f281e2ae2598a" to="f584ae81c2854cd6b656f8906a89fcb4" visibility="package" />
+          <item id="87fe030c60aa4d1f99379c27166753f4" cid="PROP019" type="property" owner="dia9a477789ec34ced80aadd5de28e3be57044" creator="" creation-date="04/24/2023 13:59:07" visibility="undefined" />
+          <item id="fc7f72e0c74a49f7a46f281e2ae2598a" cid="ELEM001" type="frame" name="payment = PaymentStrategy.doPayment(kontoklienta,kontosprzedawcy)" creator="" creation-date="04/24/2023 13:22:08">
+            <frame />
+          </item>
+          <item id="dia9a477789ec34ced80aadd5de28e3be57044" cid="C004" type="class" name="ConcreteStrategyB" creator="" creation-date="04/24/2023 13:40:02" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a2247c36286be49cb932f90afd974f04a163" cid="PROP019" name="" creation-date="04/24/2023 13:59:07" property-ref="87fe030c60aa4d1f99379c27166753f4" />
+            </attributes>
+            <operations>
+              <operation id="ob0f6c6f6e4af490a8e16cacd61ec7f57762" cid="OP008" name="doPayment" creation-date="04/24/2023 13:40:46" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe5f33b4a614d4f5589d3adca44fdb56e" name="clientaccount" type="" type-id="" />
+                  <parameter id="p896d64aa530e47c585348dc706b54129" name="sellecaccount" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o148ed5916d6346eeba4d531bfbdf9c3c903" cid="OP016" name="setName" creation-date="04/24/2023 13:59:15" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p19c9dfaf97b046aaa402dea2b5be88ad" name="Blik" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o88f89380cf2741b59b42b952e5f66158198" cid="OP017" name="setAvailableCountries" creation-date="04/24/2023 14:00:48" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p5f147c8cd38b42198d7fddcf8361b1e2" name="Poland" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o6296b7de924d4c7a84284f9d29391810273" cid="OP011" name="setPaymentPricing" creation-date="04/24/2023 13:46:43" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe10842e6377843e1b10a6889fed4093a" name="0zł" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di8def80ab06124d91b66c9fc5ca3d18318880" cid="C007" type="class" name="ConcreteStrategyD" creator="" creation-date="04/24/2023 13:40:02" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a2247c36286be49cb932f90afd974f04a163" cid="PROP022" name="" creation-date="04/24/2023 13:59:07" property-ref="82284ce43cc84a719f5dd3be64759550" />
+              <attribute id="aeba9e13d04894cebb1720ac503a7bd98950" cid="PROP023" name="doPayment (clientaccount, sellecaccount)" creation-date="04/24/2023 14:05:07" property-ref="7972409d0203472c9ebd4083a399fd5c" />
+            </attributes>
+            <operations>
+              <operation id="o148ed5916d6346eeba4d531bfbdf9c3c903" cid="OP016" name="setName" creation-date="04/24/2023 13:59:15" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p19c9dfaf97b046aaa402dea2b5be88ad" name="PayPal" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o88f89380cf2741b59b42b952e5f66158198" cid="OP017" name="setAvailableCountries" creation-date="04/24/2023 14:00:48" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p5f147c8cd38b42198d7fddcf8361b1e2" name="Poland" type="" type-id="" />
+                  <parameter id="p9e20bb955300463cbf351bf0b9bf133a" name="USA" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o6296b7de924d4c7a84284f9d29391810273" cid="OP011" name="setPaymentPricing" creation-date="04/24/2023 13:46:43" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pe10842e6377843e1b10a6889fed4093a" name="0zł" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+        </abstract-items>
+        <layer id="42f119a2d5dc4671bd4e029de00a914a" name="Default" visible="true" enabled="true" locked="false">
+          <item id="0b50ff9837524b10a008cff8814825cd" iid="146ffe45d075460ba33f3fec0f8f118c" creation-date="04/24/2023 13:15:54" order-index="0" type="entity">
+            <layout ax="375" ay="103" awidth="281" aheight="105" x="375" y="103" width="140" height="105" rotation-center="0,27.5" />
+            <classifier />
+            <class />
+          </item>
+          <item id="f584ae81c2854cd6b656f8906a89fcb4" iid="4fc80b86e4124c65b93f14b4d8c8a8fd" show-fields="true" creation-date="04/24/2023 13:16:14" order-index="1" type="entity">
+            <layout ax="-16" ay="85" awidth="285" aheight="155" x="-16" y="85" width="285" height="136" rotation-center="61,24.5" />
+            <classifier />
+            <class />
+          </item>
+          <item id="fc7f72e0c74a49f7a46f281e2ae2598a" iid="9c39cffdf3cc4eda9464973ef6a7dbe9" creation-date="04/24/2023 13:22:08" order-index="2" type="entity">
+            <layout ax="-206.5" ay="317" awidth="208" aheight="74" x="-206.5" y="317" width="208" height="74" expanded="-206.5,317,208,74" collapsed="0,0,0,0" rotation-center="71.5,0" />
+          </item>
+          <item id="ac0298cd83b148a3b62504792f09de08" iid="3ef65b31c8ed4544923162cd76e338e0" creation-date="04/24/2023 13:28:20" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="269" y1="162" x2="375" y2="139" start-border-pos="0.373873873873874" end-border-pos="0.9140625" start-local-pos="55" end-local-pos="55" name-position="0,20">
+              <points>
+                <point x="269" y="162" />
+                <point x="375" y="139" />
+              </points>
+            </layout>
+            <relation from="f584ae81c2854cd6b656f8906a89fcb4" from-iid="4fc80b86e4124c65b93f14b4d8c8a8fd" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+          <item id="33d56106d169447f82b1d1b554764495" iid="ecab342fec69462aa159a42d82f969d0" creation-date="04/24/2023 13:29:31" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-152" y1="317" x2="-16" y2="194" start-border-pos="0.0655048076923077" end-border-pos="0.823529411764706" start-local-pos="54.5" end-local-pos="96" name-position="0,20">
+              <points>
+                <point x="-152" y="317" />
+                <point x="-16" y="194" />
+              </points>
+            </layout>
+            <relation from="fc7f72e0c74a49f7a46f281e2ae2598a" from-iid="9c39cffdf3cc4eda9464973ef6a7dbe9" to="f584ae81c2854cd6b656f8906a89fcb4" to-iid="4fc80b86e4124c65b93f14b4d8c8a8fd" />
+          </item>
+          <item id="75c3c0f195dd4b91b8252d54568f57c3" iid="6eed0f78400e4bf5b2de279a2589b63f" show-fields="true" creation-date="04/24/2023 13:40:02" order-index="9" type="entity">
+            <layout ax="172.5" ay="425.5" awidth="349" aheight="168" x="172.5" y="425.5" width="349" height="168" />
+            <classifier />
+            <class />
+          </item>
+          <item id="dia9a477789ec34ced80aadd5de28e3be57044" iid="76d077b1b6a44375b3b89f7047d156c6" show-fields="true" creation-date="04/24/2023 13:40:02" order-index="9" type="entity">
+            <layout ax="548" ay="425.5" awidth="349" aheight="168" x="548" y="425.5" width="349" height="168" />
+            <classifier />
+            <class />
+          </item>
+          <item id="di017b4eb29adc42c6ac72e83453b851c16656" iid="4b6dc5c72a134cea8e3bda903bf7e47d" show-fields="true" creation-date="04/24/2023 13:40:02" order-index="9" type="entity">
+            <layout ax="923.5" ay="425.5" awidth="349" aheight="168" x="923.5" y="425.5" width="349" height="168" />
+            <classifier />
+            <class />
+          </item>
+          <item id="di4f19c075f89144fd9db8a8a11a735d678968" iid="0e2785e5f2fe4cdeb9e523a503ce2c85" show-fields="true" creation-date="04/24/2023 13:40:02" order-index="9" type="entity">
+            <layout ax="923.5" ay="15" awidth="349" aheight="168" x="923.5" y="15" width="349" height="168" />
+            <classifier />
+            <class />
+          </item>
+          <item id="di8def80ab06124d91b66c9fc5ca3d18318880" iid="0eeae9ad09b64c58b34eda41efa9817d" show-fields="true" creation-date="04/24/2023 13:40:02" order-index="9" type="entity">
+            <layout ax="923.5" ay="210" awidth="349" aheight="168" x="923.5" y="210" width="349" height="168" />
+            <classifier />
+            <class />
+          </item>
+          <item id="ac5c14071c524e53a16436fa1e7f3a93" iid="383ca96c594944dd8aa7e6d70e73ba16" creation-date="04/24/2023 14:07:21" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="328" y1="426" x2="516" y2="208" start-border-pos="0.111389684813754" end-border-pos="0.624555160142349" start-local-pos="155.5" end-local-pos="141" name-position="0,20">
+              <points>
+                <point x="328" y="426" />
+                <point x="516" y="208" />
+              </points>
+            </layout>
+            <relation from="75c3c0f195dd4b91b8252d54568f57c3" from-iid="6eed0f78400e4bf5b2de279a2589b63f" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+          <item id="ce44475a841546d1bcd062a1356a519d" iid="6e5a6aabaebc421aad4d009e2f15a3ab" creation-date="04/24/2023 14:07:26" order-index="11" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="722" y1="426" x2="541" y2="208" start-border-pos="0.124641833810888" end-border-pos="0.602313167259786" start-local-pos="174" end-local-pos="166" name-position="0,20">
+              <points>
+                <point x="722" y="426" />
+                <point x="541" y="208" />
+              </points>
+            </layout>
+            <relation from="dia9a477789ec34ced80aadd5de28e3be57044" from-iid="76d077b1b6a44375b3b89f7047d156c6" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+          <item id="2f569ab0246b46b098e2186ecfc715eb" iid="d919eecdbf3847919611b3873c616a42" creation-date="04/24/2023 14:07:32" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="924" y1="426" x2="656" y2="208" start-border-pos="0.000358166189111748" end-border-pos="0.5" start-local-pos="0.5" end-local-pos="105" name-position="0,20">
+              <points>
+                <point x="924" y="426" />
+                <point x="656" y="208" />
+              </points>
+            </layout>
+            <relation from="di017b4eb29adc42c6ac72e83453b851c16656" from-iid="4b6dc5c72a134cea8e3bda903bf7e47d" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+          <item id="9b261b3a660243fca5b6fa1747c9e95b" iid="9c43fbcf358843b19e06bbb2ba6960f2" creation-date="04/24/2023 14:07:37" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="924" y1="294" x2="656" y2="156" start-border-pos="0.875" end-border-pos="0.376190476190476" start-local-pos="84" end-local-pos="53" name-position="0,20">
+              <points>
+                <point x="924" y="294" />
+                <point x="656" y="156" />
+              </points>
+            </layout>
+            <relation from="di8def80ab06124d91b66c9fc5ca3d18318880" from-iid="0eeae9ad09b64c58b34eda41efa9817d" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+          <item id="8c1a6829e9044697982ea7c60b2efe24" iid="ff830dffbbe24cd1ad105df49736bca0" creation-date="04/24/2023 14:07:40" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="924" y1="99" x2="656" y2="103" start-border-pos="0.875" end-border-pos="0.25" start-local-pos="84" end-local-pos="0" name-position="0,20">
+              <points>
+                <point x="924" y="99" />
+                <point x="656" y="103" />
+              </points>
+            </layout>
+            <relation from="di4f19c075f89144fd9db8a8a11a735d678968" from-iid="0e2785e5f2fe4cdeb9e523a503ce2c85" to="0b50ff9837524b10a008cff8814825cd" to-iid="146ffe45d075460ba33f3fec0f8f118c" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
